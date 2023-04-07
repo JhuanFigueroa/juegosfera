@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/app.css" />
+    <title>Juegosfera Store</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <div class="barra">
+          <div class="logo">
+            <a href="index.html" class="logo_texto">
+              <h1>Juegosfera</h1>
+            </a>
+            <div class="logo_imagen">
+              <img src="build/img/logo.PNG" alt="Logotipo" />
+            </div>
+          </div>
+          <nav class="navegacion">
+            <li class="categoria">
+              <a href="#" class="nav_enlace">Categorias</a>
+              <ul class="burger">
+                <li>
+                  <a href="categorias/juguetes.html" class="nav_enlace"
+                    >Juguetes</a
+                  >
+                </li>
+                <li>
+                  <a href="categorias/funkos.html" class="nav_enlace">Funkos</a>
+                </li>
+                <li>
+                  <a href="categorias/playeras.html" class="nav_enlace"
+                    >Playeras</a
+                  >
+                </li>
+                <li>
+                  <a href="categorias/posters.html" class="nav_enlace"
+                    >Posters</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav_enlace">Sobre nosotros</a></li>
+            <li><a href="contacto.html" class="nav_enlace">Contacto</a></li>
+          </nav>
+
+          <div class="carrito-compras">
+            <img src="build/img/cart.png" alt="" class="imagen-carrito" />
+            <div class="contenido oculto" id="carrito">
+              <table id="lista-carrito" class="lista">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="boton-amarillo-block"
+                >Vaciar Carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contenido-hero contenedor">
+          <h1>LOS MEJORES ARTICULOS DE VIDEOJUEGOS</h1>
+          <form class="contenedor">
+            <input
+              type="text"
+              class="busqueda"
+              placeholder="Busca un articulo"
+            />
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="contendor contenido">
+      <h1>Sobre nosotros</h1>
+      <main class="contenedor">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+
+        <img src="build/img/about.jpg" alt="">
+        <br>
+      </main>
+      <footer class="footer">
+        <div class="contenedor">
+          <h1>Creado por Juan Figueroa Trejo &copy;</h1>
+          <div class="barra">
+            <div class="logo">
+              <a href="index.html" class="logo_texto">
+                <h1>Juegosfera</h1>
+              </a>
+            </div>
+
+            <nav class="navegacion">
+              <li><a href="#" class="nav_enlace">Sobre nosotros</a></li>
+              <li><a href="#" class="nav_enlace">Contacto</a></li>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <script src="build/js/bundle.min.js"></script>
+    </div>
+  </body>
+</html>

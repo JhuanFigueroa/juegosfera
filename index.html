@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/app.css" />
+    <title>Juegosfera Store</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <a href="index.html" class="logo_texto">
+                        <h1>Juegosfera</h1>
+                    </a>
+                    <div class="logo_imagen">
+                        <img src="build/img/logo.PNG" alt="Logotipo">
+                    </div>
+
+                </div>
+                <nav class="navegacion">
+
+                    <li class="categoria">
+                        <a href="#" class="nav_enlace">Categorias</a>
+                        <ul class="burger">
+                            <li><a href="categorias/juguetes.html" class="nav_enlace">Juguetes</a></li>
+                            <li><a href="categorias/funkos.html" class="nav_enlace">Funkos</a></li>
+                            <li><a href="categorias/playeras.html" class="nav_enlace">Playeras</a></li>
+                            <li><a href="categorias/posters.html" class="nav_enlace">Posters</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav_enlace">Sobre nosotros</a></li>
+                    <li><a href="contacto.html" class="nav_enlace">Contacto</a></li>
+
+                </nav>
+
+                <div class="carrito-compras">
+                    <img src="build/img/cart.png" alt="" class="imagen-carrito">
+                    <div class="contenido oculto" id="carrito">
+                        <table id="lista-carrito" class="lista">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="boton-amarillo-block">Vaciar Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido-hero contenedor">
+                <h1>LOS MEJORES ARTICULOS DE VIDEOJUEGOS</h1>
+                <form class="contenedor">
+                    <input type="text" class="busqueda" placeholder="Busca un articulo" />
+                    <input type="submit" value="Buscar" />
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="contendor contenido">
+        <h1>Nuestros productos</h1>
+        <div class="articulos contenedor" id="lista-articulos">
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/juguete3.JPG">
+                <div class="info-articulo">
+                    <h4>Figura The Witcher</h4>
+                    <a href="categorias/juguetes.html">Juguetes</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$700</p>
+                        <p class="oferta">$500</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <!--Articulo juguete-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/playera4.JPG">
+                <div class="info-articulo">
+                    <h4>Playera Minecraft</h4>
+                    <a href="playeras.html">Playeras</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$250</p>
+                        <p class="oferta">$200</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Playeras-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/poster7.JPG">
+                <div class="info-articulo">
+                    <h4>Poster Lehend Of Zelda</h4>
+                    <a href="posters.html">Posters</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$150</p>
+                        <p class="oferta">$120</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="31">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Posters-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/funko4.JPG">
+                <div class="info-articulo">
+                    <h4>Funko The witcher</h4>
+                    <a href="funkos.html">Funkos</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$400</p>
+                        <p class="oferta">$300</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="20">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Funkos-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/playera7.JPG">
+                <div class="info-articulo">
+                    <h4>Playera Legned of Zelda</h4>
+                    <a href="playeras.html">Playeras</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$250</p>
+                        <p class="oferta">$200</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Playeras-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/juguete5.JPG">
+                <div class="info-articulo">
+                    <h4>Figura Horizon</h4>
+                    <a href="categorias/juguetes.html">Juguetes</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$700</p>
+                        <p class="oferta">$500</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <!--Articulo juguete-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/funko7.JPG">
+                <div class="info-articulo">
+                    <h4>Funko Mortal Kombat</h4>
+                    <a href="funkos.html">Funkos</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$400</p>
+                        <p class="oferta">$300</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="23">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Funkos-->
+            <div class="articulo">
+                <img class="imagen-articulo" src="../build/img/poster4.JPG">
+                <div class="info-articulo">
+                    <h4>Poster Red Dead Redemption</h4>
+                    <a href="posters.html">Posters</a>
+                    <img class="estrellas" src="../build/img/estrellas.png">
+                    <div class="precio">
+                        <p class="regular">$150</p>
+                        <p class="oferta">$120</p>
+                    </div>
+                    <a href="#" class="boton-azul-block agregar-carrito" data-id="28">Agregar Al Carrito</a>
+                </div>
+            </div><!--Articulo Posters-->
+        </div>
+        <footer class="footer">
+            <div class="contenedor">
+                <h1>Creado por Juan Figueroa Trejo &copy;</h1>
+                <div class="barra">
+
+                    <div class="logo">
+                        <a href="index.html" class="logo_texto">
+                            <h1>Juegosfera</h1>
+                        </a>
+                    </div>
+
+                    <nav class="navegacion">
+                        <li><a href="#" class="nav_enlace">Sobre nosotros</a></li>
+                        <li><a href="#" class="nav_enlace">Contacto</a></li>
+
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <script src="build/js/bundle.min.js"></script>
+    </div>
+
+</body>
+
+</html>
